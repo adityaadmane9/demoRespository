@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+    <ul>  
+    <template for:each={opportunities.data} for:item="opportunity">
+        <li key={opportunity.id}>{opportunity.Name}</li>
+        <li key={opportunity.id}>{opportunity.Amount}</li>
+    </template>  
+    </ul>  
+    </lightning-card>
+    
+</template>

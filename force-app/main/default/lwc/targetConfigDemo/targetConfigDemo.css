@@ -1,0 +1,8 @@
+ul {
+    background:blue ;
+    padding: 10px;
+}
+ul li {
+    background: yellowgreen;
+    margin:5px;
+}

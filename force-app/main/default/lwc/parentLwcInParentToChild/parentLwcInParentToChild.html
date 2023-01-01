@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Parent LWC Component">
+        <lightning-input label="SetCounter" 
+                          value={counterValue}
+                          type="number"
+                          min="0"
+                          max="100000"
+                          onchange={counterChange} 
+                          class="slds-p-horizonal_medium" 
+        ></lightning-input>
+        <lightning-button label="Add to 100" onclick={counterClick} variant="brand">
+
+        </lightning-button>
+        <c-child-lwc-in-parent-to-child counter={counterValue}></c-child-lwc-in-parent-to-child>
+    </lightning-card>
+</template>
